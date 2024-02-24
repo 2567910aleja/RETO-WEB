@@ -1,11 +1,11 @@
 import { Page, PageContext, pageProvider } from "@testing/wdio-page-objects";
 
 const selectors = {
-  userTextField: `(//div[normalize-space()='Products'])[1]`
+  userTextField: `//div[@class='flex pv2 items-center']`
 };
 
 @PageContext({
-  path: '/v1/',
+  path: '/',
   wrapper: `body`, //Padre  o nodo principal
 })
 
