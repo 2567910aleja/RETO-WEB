@@ -6,6 +6,11 @@ const selectors = {
   password: `input[placeholder='Escribe tu contraseña']`,
   btnlogin: `button[type='submit']`,
   optionEmail: `(//button[@type='button'])[6]`,
+  categorias: `//img[@alt='alt text']`,
+  tecnologia: `(//div[contains(text(),'Tecnología')])[1]`,
+  smartphone: `//a[normalize-space()='Smartphones']`
+  //agregar nuevos selectores agregados en compraspage
+
 
 }
 
