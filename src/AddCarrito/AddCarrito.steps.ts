@@ -18,6 +18,11 @@ export class AddProductoStep {
     pageProvider.go(AddProducto);
   }
 
+  @When(/^ingreso mi departamento "([^"]*)", ciudad "([^"]*)" y mi direccion "([^"]*)" para el envio$/)
+  enterDataModal(modal_departamento: string, modal_ciudad: string, modal_direccion: string) {
+    this.AddProducto.enterDataModal(modal_departamento, modal_ciudad, modal_direccion);
+  }
+
   @When(/^doy clic al menu desplegable de categoria$/)
   clickHamburguesaMenu() {
     this.AddProducto.clickCategoria();
@@ -37,6 +42,7 @@ export class AddProductoStep {
   verifylistProducts() {
     expect(this.dashboardPage.obtainText()).to.be.true;
   }
+
 
   @When(/^añadimos 3 productos de manera aleatorias al carrito$/)
   verifySuccessfulAdd() {
