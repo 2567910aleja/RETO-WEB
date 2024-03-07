@@ -1,5 +1,3 @@
-//import { Key } from "webdriver";
-//import { browser } from 'webdriverio';
 import { Page, PageContext, pageProvider } from "@testing/wdio-page-objects";
 
 
@@ -41,11 +39,6 @@ export class AddProducto extends Page {
     for (let i = 0; i < modal_departamento.length - 1; i++) {
       browser.keys(modal_departamento[i].toLocaleLowerCase());
     }
-    //$(selectors.modal_departamento).setValue(modal_departamento);
-    //browser.pause(20000);
-
-    //browser.$(modal).sendKeys('\uE007');
-    //$(modal_direccion).keys('\uE007');
     browser.keys('\uE007'); //Enter
 
     $(selectors.modal_ciudad).click()
