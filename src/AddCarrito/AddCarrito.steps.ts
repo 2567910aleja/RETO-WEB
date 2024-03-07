@@ -29,12 +29,12 @@ export class AddProductoStep {
   }
 
   @When(/^doy clic en la categoria tecnologia$/)
-  clickcategToy() {
+  clickCategoria() {
     this.AddProducto.clickTecnologia();
   }
 
   @When(/^doy clic en la subcategoria smartphone$/)
-  clickdinoAnimals() {
+  clickSubcategoria() {
     this.AddProducto.clickSmartphones();
   }
 
